@@ -1,1 +1,71 @@
+labels: "Category: Metadata Enrichments"
+title: "<Your suggestion title>"
 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!NOTE]
+        Thank you for sharing your ideas for contributing enriched metadata and enrichment methods. Please provide as much information as possible in the form below. 
+        
+        ## Enrichment Use Case
+  - type: textarea
+    id: enrichment-use-case
+    attributes:
+      label: What metadata can you share and why is it useful to the community?
+      description: Describe the enrichment use case
+      placeholder: Describe the enrichment use case ...
+    validations:
+      required: true
+  - type: textarea
+    id: metadata-schema
+    attributes:
+      label: Does the metadata conform to a specific schema?
+      description: Provide detail on the metadata schema
+      placeholder: Provide detail on the metadata schema ...
+    validations:
+      required: true
+  - type: textarea
+    id: sharing-method
+    attributes:
+      label: How can you share the metadata?
+      description: Provide detail on file format or API methods
+      placeholder: Provide detail on file format or API methods ...
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Can you share a sample of metadata?
+      description: Upload the sample
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
+    id: provenance-method
+    attributes:
+      label: How is the metadata curated?
+      description: Provide detail on the curation method
+      placeholder: Provide detail on the curation method ...
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Extra information
+        _These fields are not required and help us understand more about your suggestion._
+  - type: input
+    id: name
+    attributes:
+      label: Your name
+  - type: input
+    id: organization
+    attributes:
+      label: Your organization
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Is there anything else you would like to share?
+      placeholder: Additional context or screenshots about your suggestion...
+    validations:
+      required: false
